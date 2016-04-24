@@ -1,0 +1,34 @@
+{
+  "name": "spotify-osa",
+  "version": "0.0.1",
+  "description": "Control Spotify OSX client using OSA commands",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "standard",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeoneWeird/spotify-osa.git"
+  },
+  "keywords": [
+    "osa",
+    "spotify"
+  ],
+  "author": "Adam Brady <adam@boxxen.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SomeoneWeird/spotify-osa/issues"
+  },
+  "homepage": "https://github.com/SomeoneWeird/spotify-osa#readme",
+  "dependencies": {
+    "osa": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-register": "^6.6.5",
+    "standard": "^6.0.8"
+  }
+}
